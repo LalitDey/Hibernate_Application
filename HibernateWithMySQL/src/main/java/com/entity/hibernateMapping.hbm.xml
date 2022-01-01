@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+
+	<class name="com.entity.EmployeeDetails" table="employee">
+		<id name="empid" column="EMPID">
+	<!-- For auto insert -> auto increment -->
+		<generator class="increment"></generator>
+		
+		</id>
+		<property name="name" column="ENAME"/>
+		<property name="age" column="AGE"/>
+		<property name="salary" column="SALARY"></property>
+	</class>
+	
+	
+</hibernate-mapping>
