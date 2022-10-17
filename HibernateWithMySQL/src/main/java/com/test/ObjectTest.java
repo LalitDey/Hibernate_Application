@@ -51,8 +51,8 @@ public class ObjectTest {
 			
 		}
 		finally{
-		session.close();
-		factory.close();
+			session.close();
+			factory.close();
 		}
 		
 	}
