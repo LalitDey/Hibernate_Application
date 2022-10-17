@@ -50,10 +50,10 @@ public class ObjectTest {
 			System.out.println("Something went wrong");
 			
 		}
-		
-		
+		finally{
 		session.close();
 		factory.close();
+		}
 		
 	}
 
